@@ -1,2 +1,4 @@
 # Open-Source-Energy-Modeling-2024
-I´m setting up my first repository and testing some basic functionality
+I´m setting up my first repository and testing some basic functionality:
+- clone, commit, push
+- version control (GitKraken)
