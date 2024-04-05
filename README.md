@@ -5,3 +5,4 @@
 I´m setting up my first repository and testing some basic functionality:
 - clone, commit, push
 - version control (GitKraken)
+- style check with ruff
