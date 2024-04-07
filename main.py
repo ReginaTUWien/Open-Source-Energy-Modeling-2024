@@ -16,5 +16,4 @@ supply_tarif = 0.15         # in €/kWh
 
 npv = utils.calc_npv(investment_costs, int_rate, installed_capacity, lifetime, full_load_hours,
              annual_load, feedin_tarif, supply_tarif)
-
 print('NPV at the end of life: ' + str(round(npv[lifetime-1],4)) + ' €')
