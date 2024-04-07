@@ -2,7 +2,19 @@
 
 [![license](https://img.shields.io/badge/license-Apache%202.0-black)](https://github.com/ReginaTUWien/Open-Source-Energy-Modeling-2024/blob/main/LICENSE)
 
-I´m setting up my first repository and testing some basic functionality:
-- clone, commit, push
-- version control (GitKraken)
-- style check with ruff
+## This method is used to calculate the net present value of a residential PV-system.
+
+For these calculations are some parameters and assumptions are required 
+(these can be edited in main.py):
+
+- Investment costs: 1200 €/kWp
+- Interest rate: 5 %
+- Installed capacity: 5 kWp
+- Lifetime: 20 years
+- Annual load of the household: 3500 kWh
+- Feedin tarif: 8 ct/kWh
+- Electricity costs: 15 ct/kWh
+
+It is also assumed that half of the energy generated is fed into the grid.
+
+
