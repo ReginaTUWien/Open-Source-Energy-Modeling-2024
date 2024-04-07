@@ -2,9 +2,8 @@
 In this module the functions of utils.py are tested
 """
 
-
-import utils
 import math
+import utils
 
 
 def test_calc_crf():
