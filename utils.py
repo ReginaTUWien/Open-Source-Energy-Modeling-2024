@@ -36,8 +36,11 @@ def calc_npv(investment_costs, int_rate, installed_capacity, lifetime,
     annual_costs = calc_annual_costs(annual_load, self_consumption, supply_tarif)
     annual_revenues = calc_annual_revenues(self_consumption, feedin_tarif)
 
-    npv = np.zeros(lifetime)
+    # npv = np.zeros(lifetime)
+    npv = [0]
     npv[0] = - (investment_costs*installed_capacity)
+    # for i in range(1, lifetime):
+    #     npv[i] = npv[i-1] + 1/crf * (annual_revenues -annual_costs)
     for i in range(1, lifetime):
-        npv[i] = npv[i-1] + 1/crf * (annual_revenues - annual_costs)
+        npv.append(npv[i-1] + 1/crf * (annual_revenues -annual_costs))
     return npv
