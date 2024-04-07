@@ -24,11 +24,7 @@ annual_costs = utils.calc_annual_costs(
 annual_revenues = utils.calc_annual_revenues(self_consumption, feedin_tarif)
 
 npv = utils.calc_npv(
-    investment_costs,
-    installed_capacity,
-    crf,
-    annual_costs,
-    annual_revenues
+    investment_costs, installed_capacity, crf, annual_costs, annual_revenues
 )
 
 
