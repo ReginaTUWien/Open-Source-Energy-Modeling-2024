@@ -4,9 +4,6 @@ The parameters are defined in main.py
 """
 
 
-import numpy as np
-
-
 def calc_crf(int_rate, lifetime):
     '''Calculation of capital ercovery factor'''
     crf = ((1+int_rate)**lifetime*int_rate) / ((1+int_rate)**lifetime-1)
@@ -39,8 +36,6 @@ def calc_npv(investment_costs, int_rate, installed_capacity, lifetime,
     # npv = np.zeros(lifetime)
     npv = [0]
     npv[0] = - (investment_costs*installed_capacity)
-    # for i in range(1, lifetime):
-    #     npv[i] = npv[i-1] + 1/crf * (annual_revenues -annual_costs)
     for i in range(1, lifetime):
         npv.append(npv[i-1] + 1/crf * (annual_revenues -annual_costs))
     return npv
