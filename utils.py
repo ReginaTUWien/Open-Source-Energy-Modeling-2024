@@ -35,7 +35,7 @@ def calc_npv(
     """Calculation of net present value over the lifetime"""
 
     npv = [0]
-    npv[0] = -(investment_costs * installed_capacity)
+    npv[0] = -(investment_costs*installed_capacity)
     for i in range(1, 20):
         npv.append(npv[i-1] + 1/crf*(annual_revenues-annual_costs))
     return npv
