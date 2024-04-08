@@ -21,7 +21,7 @@ It is also assumed that half of the energy generated is fed into the grid.
 
 Functions:
 
-- calc_crf: Calculation of capital ercovery factor
+- calc_crf: Calculation of capital recovery factor
 - calc_self_consumption: Calculation of self-consumption per yeaar with the assumption that 50% of the energy generated is consumed
 - calc_annual_costs: Calculation of annual electricity costs
 - calc_annual_revenues: Calculation of annual revenues
