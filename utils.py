@@ -6,7 +6,7 @@ The parameters are defined in main.py
 
 def calc_crf(int_rate, lifetime):
     """Calculation of capital ercovery factor"""
-    crf = ((1+int_rate)**lifetime * int_rate) / ((1+int_rate)**lifetime - 1)
+    crf = ((1 + int_rate) ** lifetime * int_rate) / ((1 + int_rate) ** lifetime - 1)
     return crf
 
 
@@ -29,10 +29,11 @@ def calc_annual_revenues(self_consumption, feedin_tarif):
     return annual_revenues
 
 
-def calc_npv(investment_costs, installed_capacity, crf, annual_costs, annual_revenues):
+def calc_npv(
+    investment_costs, installed_capacity, crf, annual_costs, annual_revenues):
     """Calculation of net present value over the lifetime"""
     npv = [0]
     npv[0] = -investment_costs * installed_capacity
     for i in range(1, 20):
-        npv.append(npv[i-1]+1/crf*(annual_revenues-annual_costs))
+        npv.append(npv[i-1] + 1 / crf * (annual_revenues - annual_costs))
     return npv
