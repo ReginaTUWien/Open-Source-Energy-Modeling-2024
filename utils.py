@@ -29,11 +29,8 @@ def calc_annual_revenues(self_consumption, feedin_tarif):
     return annual_revenues
 
 
-def calc_npv(
-    investment_costs, installed_capacity, crf, annual_costs, annual_revenues
-):
+def calc_npv(investment_costs, installed_capacity, crf, annual_costs, annual_revenues):
     """Calculation of net present value over the lifetime"""
-
     npv = [0]
     npv[0] = -(investment_costs*installed_capacity)
     for i in range(1, 20):
