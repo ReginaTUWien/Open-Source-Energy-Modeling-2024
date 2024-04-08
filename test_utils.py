@@ -6,9 +6,11 @@ import math
 import utils
 
 
-# def test_calc_crf():
-#     """Test the function calc_crf"""
-#     assert math.isclose(utils.calc_crf(10, 10),10,abs_tol = 0.001)
+def test_calc_crf():
+    """Test the function calc_crf"""
+    assert math.isclose(utils.calc_crf(10, 10), 10, abs_tol=0.001)
+
+
 def test_calc_self_consumption():
     """Test the function calc_self_consumption"""
     assert utils.calc_self_consumption(2, 800) == 800
