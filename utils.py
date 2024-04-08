@@ -36,4 +36,3 @@ def calc_npv(investment_costs, installed_capacity, crf, annual_costs, annual_rev
     for i in range(1, 20):
         npv.append(npv[i - 1] + 1 / crf * (annual_revenues - annual_costs))
     return npv
-
